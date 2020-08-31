@@ -1,0 +1,8 @@
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\bin\Debug\UserInterface.exe.config
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\bin\Debug\UserInterface.exe
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\bin\Debug\UserInterface.pdb
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.csprojAssemblyReference.cache
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.Properties.Resources.resources
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.csproj.GenerateResource.cache
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.exe
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.pdb

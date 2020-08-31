@@ -1,0 +1,5 @@
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
