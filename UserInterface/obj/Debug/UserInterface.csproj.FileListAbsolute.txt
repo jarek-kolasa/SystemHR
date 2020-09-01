@@ -9,3 +9,4 @@ C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemH
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.exe
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.pdb
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.UserInterface.Forms.MainForm.resources
