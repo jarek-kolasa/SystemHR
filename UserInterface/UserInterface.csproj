@@ -86,5 +86,29 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emplyees_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contracts_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrganizationalUnits_32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salary_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Departments_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Positions_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
