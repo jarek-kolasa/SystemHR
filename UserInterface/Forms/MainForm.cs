@@ -31,5 +31,19 @@ namespace SystemHR.UserInterface.Forms
         {
 
         }
+
+        private void btnEmpoyees_Click(object sender, EventArgs e)
+        {
+            TabPage tpTab = new TabPage();
+            tcTabs.Controls.Add(tpTab);
+
+            Form frm = new Form();
+            tpTab.Text = frm.Text = "Zakładka";
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            tpTab.Controls.Add(frm);
+        }
     }
 }
