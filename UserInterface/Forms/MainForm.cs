@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SystemHR.UserInterface.Forms.Contracts;
+using SystemHR.UserInterface.Forms.Employees;
 
 namespace SystemHR.UserInterface.Forms
 {
@@ -37,8 +39,22 @@ namespace SystemHR.UserInterface.Forms
             TabPage tpTab = new TabPage();
             tcTabs.Controls.Add(tpTab);
 
-            Form frm = new Form();
-            tpTab.Text = frm.Text = "Zakładka";
+            EmployeesForm frm = new EmployeesForm();
+            tpTab.Text = frm.Text;
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            tpTab.Controls.Add(frm);
+        }
+
+        private void btnContracts_Click(object sender, EventArgs e)
+        {
+            TabPage tpTab = new TabPage();
+            tcTabs.Controls.Add(tpTab);
+
+            ContractsForm frm = new ContractsForm();
+            tpTab.Text = frm.Text;
             frm.TopLevel = false;
             frm.Visible = true;
             frm.FormBorderStyle = FormBorderStyle.None;

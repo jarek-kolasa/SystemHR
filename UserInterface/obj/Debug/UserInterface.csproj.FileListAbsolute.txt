@@ -10,3 +10,5 @@ C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\UserInt
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.exe
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.pdb
 C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.UserInterface.Forms.MainForm.resources
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.UserInterface.Forms.Contracts.ContractsForm.resources
+C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\obj\Debug\SystemHR.UserInterface.Forms.Employees.EmployeesForm.resources

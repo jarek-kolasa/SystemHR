@@ -38,11 +38,11 @@
             this.btnEmpoyees = new System.Windows.Forms.Button();
             this.tpConfiguration = new System.Windows.Forms.TabPage();
             this.pMain = new System.Windows.Forms.Panel();
+            this.tcTabs = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tssVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.tssDatabase = new System.Windows.Forms.ToolStripStatusLabel();
             this.tsslUser = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tcTabs = new System.Windows.Forms.TabControl();
             this.tcMain.SuspendLayout();
             this.tpGeneral.SuspendLayout();
             this.pMain.SuspendLayout();
@@ -143,6 +143,7 @@
             this.btnContracts.TabIndex = 1;
             this.btnContracts.Text = "Umowy";
             this.btnContracts.UseVisualStyleBackColor = false;
+            this.btnContracts.Click += new System.EventHandler(this.btnContracts_Click);
             // 
             // btnEmpoyees
             // 
@@ -180,6 +181,15 @@
             this.pMain.Size = new System.Drawing.Size(952, 447);
             this.pMain.TabIndex = 1;
             // 
+            // tcTabs
+            // 
+            this.tcTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tcTabs.Location = new System.Drawing.Point(0, 0);
+            this.tcTabs.Name = "tcTabs";
+            this.tcTabs.SelectedIndex = 0;
+            this.tcTabs.Size = new System.Drawing.Size(952, 421);
+            this.tcTabs.TabIndex = 1;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -213,15 +223,6 @@
             this.tsslUser.Name = "tsslUser";
             this.tsslUser.Size = new System.Drawing.Size(125, 20);
             this.tsslUser.Text = "Użytkownik: JK";
-            // 
-            // tcTabs
-            // 
-            this.tcTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcTabs.Location = new System.Drawing.Point(0, 0);
-            this.tcTabs.Name = "tcTabs";
-            this.tcTabs.SelectedIndex = 0;
-            this.tcTabs.Size = new System.Drawing.Size(952, 421);
-            this.tcTabs.TabIndex = 1;
             // 
             // MainForm
             // 
