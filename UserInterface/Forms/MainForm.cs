@@ -84,7 +84,7 @@ namespace SystemHR.UserInterface.Forms
         private void tcTabs_MouseDown(object sender, MouseEventArgs e)
         {
             // Process MouseDown event only till (tabControl.TabPages.Count - 1) excluding the last TabPage
-            for (var i = 0; i < this.tcTabs.TabPages.Count - 1; i++)
+            for (var i = 0; i < this.tcTabs.TabPages.Count ; i++)
             {
                 var tabRect = this.tcTabs.GetTabRect(i);
                 tabRect.Inflate(-2, -2);
