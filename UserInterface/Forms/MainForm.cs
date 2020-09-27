@@ -38,30 +38,14 @@ namespace SystemHR.UserInterface.Forms
 
         private void btnEmpoyees_Click(object sender, EventArgs e)
         {
-            TabPage tpTab = new TabPage();
-            tcTabs.Controls.Add(tpTab);
-
             EmployeesForm frm = new EmployeesForm();
-            tpTab.Text = frm.Text;
-            frm.TopLevel = false;
-            frm.Visible = true;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill;
-            tpTab.Controls.Add(frm);
+            ShowFormInTabPage(frm);
         }
 
         private void btnContracts_Click(object sender, EventArgs e)
         {
-            TabPage tpTab = new TabPage();
-            tcTabs.Controls.Add(tpTab);
-
             ContractsForm frm = new ContractsForm();
-            tpTab.Text = frm.Text;
-            frm.TopLevel = false;
-            frm.Visible = true;
-            frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill;
-            tpTab.Controls.Add(frm);
+            ShowFormInTabPage(frm);
         }
 
         private void tcTabs_DrawItem(object sender, DrawItemEventArgs e)
@@ -84,7 +68,7 @@ namespace SystemHR.UserInterface.Forms
         private void tcTabs_MouseDown(object sender, MouseEventArgs e)
         {
             // Process MouseDown event only till (tabControl.TabPages.Count - 1) excluding the last TabPage
-            for (var i = 0; i < this.tcTabs.TabPages.Count ; i++)
+            for (var i = 0; i < this.tcTabs.TabPages.Count; i++)
             {
                 var tabRect = this.tcTabs.GetTabRect(i);
                 tabRect.Inflate(-2, -2);
@@ -100,6 +84,20 @@ namespace SystemHR.UserInterface.Forms
                     break;
                 }
             }
+        }
+
+        private void ShowFormInTabPage(Form frm)
+        {
+            TabPage tpTab = new TabPage();
+            tcTabs.Controls.Add(tpTab);
+
+            tpTab.Text = frm.Text;
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            tpTab.Controls.Add(frm);
+            tcTabs.SelectedTab = tpTab;
         }
     }
 }
