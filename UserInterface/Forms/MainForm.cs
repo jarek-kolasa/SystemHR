@@ -38,8 +38,11 @@ namespace SystemHR.UserInterface.Forms
 
         private void btnEmpoyees_Click(object sender, EventArgs e)
         {
-            EmployeesForm frm = new EmployeesForm();
-            ShowFormInTabPage(frm);
+
+            if (EmployeesForm.IsNull)
+            {
+            ShowFormInTabPage(EmployeesForm.Instance);
+            }
         }
 
         private void btnContracts_Click(object sender, EventArgs e)
@@ -81,6 +84,9 @@ namespace SystemHR.UserInterface.Forms
                 if (imageRect.Contains(e.Location))
                 {
                     this.tcTabs.TabPages.RemoveAt(i);
+
+                    EmployeesForm.Instance.Close();
+
                     break;
                 }
             }
