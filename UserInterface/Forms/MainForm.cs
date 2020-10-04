@@ -14,7 +14,9 @@ namespace SystemHR.UserInterface.Forms
 {
     public partial class MainForm : Form
     {
-        private string closeButtonFullPath = @"C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\Resources\close_16.png";
+        private string _closeButtonFullPath = @"C:\Users\jkola\Desktop\Programowanie\C#\SystemHR\UserInterface\Resources\close_16.png";
+        private TabPage _tpEmployees;
+        private TabPage _tpContracts;
 
         public MainForm()
         {
@@ -41,14 +43,26 @@ namespace SystemHR.UserInterface.Forms
 
             if (EmployeesForm.IsNull)
             {
-            ShowFormInTabPage(EmployeesForm.Instance);
+                _tpEmployees = new TabPage();
+                ShowFormInTabPage(_tpEmployees, EmployeesForm.Instance);
+            }
+            else
+            {
+                tcTabs.SelectedTab = _tpEmployees;
             }
         }
 
         private void btnContracts_Click(object sender, EventArgs e)
         {
-            ContractsForm frm = new ContractsForm();
-            ShowFormInTabPage(frm);
+            if (ContractsForm.IsNull)
+            {
+            _tpContracts = new TabPage();
+            ShowFormInTabPage(_tpContracts, ContractsForm.Instance);
+            }
+            else
+            {
+                tcTabs.SelectedTab = _tpContracts;
+            }
         }
 
         private void tcTabs_DrawItem(object sender, DrawItemEventArgs e)
@@ -58,7 +72,7 @@ namespace SystemHR.UserInterface.Forms
                 var tabPage = this.tcTabs.TabPages[e.Index];
                 var tabRect = this.tcTabs.GetTabRect(e.Index);
 
-                var closeImage = new Bitmap(closeButtonFullPath);
+                var closeImage = new Bitmap(_closeButtonFullPath);
                 e.Graphics.DrawImage(closeImage,
                     (tabRect.Right - closeImage.Width),
                     tabRect.Top + (tabRect.Height - closeImage.Height) / 2);
@@ -75,7 +89,7 @@ namespace SystemHR.UserInterface.Forms
             {
                 var tabRect = this.tcTabs.GetTabRect(i);
                 tabRect.Inflate(-2, -2);
-                var closeImage = new Bitmap(closeButtonFullPath);
+                var closeImage = new Bitmap(_closeButtonFullPath);
                 var imageRect = new Rectangle(
                     (tabRect.Right - closeImage.Width),
                     tabRect.Top + (tabRect.Height - closeImage.Height) / 2,
@@ -83,18 +97,18 @@ namespace SystemHR.UserInterface.Forms
                     closeImage.Height);
                 if (imageRect.Contains(e.Location))
                 {
-                    this.tcTabs.TabPages.RemoveAt(i);
+                    var frm = tcTabs.TabPages[i].Controls[0] as Form;
+                    frm.Close();
 
-                    EmployeesForm.Instance.Close();
+                    this.tcTabs.TabPages.RemoveAt(i);
 
                     break;
                 }
             }
         }
 
-        private void ShowFormInTabPage(Form frm)
+        private void ShowFormInTabPage(TabPage tpTab, Form frm)
         {
-            TabPage tpTab = new TabPage();
             tcTabs.Controls.Add(tpTab);
 
             tpTab.Text = frm.Text;
