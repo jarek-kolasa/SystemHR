@@ -47,5 +47,6 @@ namespace SystemHR.UserInterface.Forms.Contracts
         {
             _instance = null;
         }
+
     }
 }

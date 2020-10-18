@@ -74,7 +74,7 @@ namespace SystemHR.UserInterface.Forms
 
                 var closeImage = new Bitmap(_closeButtonFullPath);
                 e.Graphics.DrawImage(closeImage,
-                    (tabRect.Right - closeImage.Width),
+                    (tabRect.Right - closeImage.Width), 
                     tabRect.Top + (tabRect.Height - closeImage.Height) / 2);
                 TextRenderer.DrawText(e.Graphics, tabPage.Text, tabPage.Font,
                     tabRect, tabPage.ForeColor, TextFormatFlags.Left);
@@ -101,7 +101,6 @@ namespace SystemHR.UserInterface.Forms
                     frm.Close();
 
                     this.tcTabs.TabPages.RemoveAt(i);
-
                     break;
                 }
             }

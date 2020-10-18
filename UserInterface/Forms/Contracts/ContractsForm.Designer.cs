@@ -48,6 +48,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ContractsForm";
             this.Text = "Umowy";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ContractsForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
